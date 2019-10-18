@@ -310,9 +310,10 @@ nav ul li:last-child {
 .fullgroomtable th, td {
   text-align: left;
   padding: calc(var(--font_n)/2);
+  width: 60%;
 }
 .fullgroomtable tr:nth-child(even) {
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.5);
 }
 
 
@@ -383,6 +384,7 @@ nav ul li:last-child {
 .basicgroomtable th, td {
   text-align: left;
   padding: calc(var(--font_n)/2);
+  width: 60%;
 }
 .basicgroomtable tr:nth-child(even) {
   /* background-color: rgba(255,255,255,0.4); */
@@ -390,7 +392,82 @@ nav ul li:last-child {
 }
 
 
+/* MOBILE SECTION: À la carte services */
+.alacarte_image_on_mobile {
+  background-color: var(--clr_primary);
+  /* height: 330px; */
+  background-image: url("IMG/");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  transform: rotate(0deg);
+  /* Adjust image left/right */
+  background-position-x: center;
+  /* Adjust image left/right/top/bottom */
+  background-position-y: center;
+}
+.alacarte {
+  width: 100%;
+  height: auto;
 
+  /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
+  Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
+  All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
+  
+  background: var(--clr_dark);
+
+    /* Image position and size adjustment */
+    /* background-image: url("GR1.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 32%; */
+    /* Adjust image left/right */
+    /* background-position-x: 85%; */
+    /* Adjust image left/right/top/bottom */
+    /* background-position-y: bottom; */
+    /* background-position-y: right; */
+
+    /* background-position: 400px 100px; */ 
+    /* background-size: cover; */
+}
+.alacarte .alacarte_text {
+  width: 100%;
+}
+.alacarte .expert {
+  padding: 10% 6% 0 6%;
+}
+.alacarte h1 {
+  /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
+  padding: 10% 6% 3% 6%;
+  color: var(--clr_light);
+}
+.alacarte p {
+  /* Adjust only top and bottom. Left and right control in .recognition div */
+  padding: 3% 6% 0% 6%;
+  color: var(--clr_light);
+}
+/* .fullgroom span { */
+  /* font-style: italic; */
+/* } */
+/* .fullgroom h2 {
+  padding: 0.5% 6% 0% 6%;
+} */
+.alacartetable {
+  border-collapse: collapse;
+  /* width+bothmargin = 88+6+6 = 100% */
+  width: 88%;
+  /* can't add margin to the bottom */
+  margin: 0% 6%;
+  /* background-color: yellow; */
+}
+.alacartetable th, 
+.alacartetable td {
+  text-align: left;
+  padding: calc(var(--font_n)/2);
+  width: 60%;
+  color: var(--clr_light);
+}
+.alacartetable tr:nth-child(even) {
+  background-color: rgba(255,255,255,0.15);
+}
 
 
 
