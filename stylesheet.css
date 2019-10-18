@@ -243,6 +243,17 @@ nav ul li:last-child {
 }
 
 
+/* ************************************* */
+/* MOBILE SECTION: FULL GROOMING
+MOBILE SECTION: BASIC GROOMING
+MOBILE SECTION: A LA CARTE
+Unable to add extra space after table so have to use a div for this */
+.addspace {
+  height: 70px;  
+}
+/* ************************************* */
+
+
 /* MOBILE SECTION: FULL GROOMING */
 .fullgroom_image_on_mobile {
   background-color: var(--clr_primary);
@@ -305,7 +316,7 @@ nav ul li:last-child {
   width: 88%;
   /* can't add margin to the bottom */
   margin: 0% 6%;
-  /* background-color: yellow; */
+  /* background-color: pink; */
 }
 .fullgroomtable th, td {
   text-align: left;
@@ -315,6 +326,7 @@ nav ul li:last-child {
 .fullgroomtable tr:nth-child(even) {
   background-color: rgba(255,255,255,0.5);
 }
+
 
 
 /* MOBILE SECTION: BASIC GROOMING */
