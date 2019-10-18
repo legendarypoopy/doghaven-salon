@@ -205,7 +205,7 @@ nav ul li:last-child {
   transition: .3s;
 
 /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
-  margin: 4% 5% 5% 6%;
+  margin: 4% 5% 15% 6%;
 
 /* Below not required after i added padding to give equal left and right spacing regardless of text length */
   /* width: 110px;
@@ -243,10 +243,10 @@ nav ul li:last-child {
 }
 
 
-/* MOBILE SECTION: OUR SALON */
-.divider2_image_on_mobile {
+/* MOBILE SECTION: FULL GROOMING */
+.fullgroom_image_on_mobile {
   background-color: var(--clr_primary);
-  height: 330px;
+  /* height: 330px; */
   background-image: url("IMG/");
   background-repeat: no-repeat;
   background-size: 120%;
@@ -256,7 +256,80 @@ nav ul li:last-child {
   /* Adjust image left/right/top/bottom */
   background-position-y: center;
 }
-.intro {
+.fullgroom {
+  width: 100%;
+  height: auto;
+
+  /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
+  Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
+  All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
+  
+  background: var(--clr_shade);
+
+    /* Image position and size adjustment */
+    /* background-image: url("GR1.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 32%; */
+    /* Adjust image left/right */
+    /* background-position-x: 85%; */
+    /* Adjust image left/right/top/bottom */
+    /* background-position-y: bottom; */
+    /* background-position-y: right; */
+
+    /* background-position: 400px 100px; */ 
+    /* background-size: cover; */
+}
+.fullgroom .fullgroom_text {
+  width: 100%;
+}
+.fullgroom .expert {
+  padding: 10% 6% 0 6%;
+}
+.fullgroom h1 {
+  /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
+  padding: 10% 6% 3% 6%;
+}
+.fullgroom p {
+  /* Adjust only top and bottom. Left and right control in .recognition div */
+  padding: 3% 6% 0% 6%;
+}
+/* .fullgroom span { */
+  /* font-style: italic; */
+/* } */
+/* .fullgroom h2 {
+  padding: 0.5% 6% 0% 6%;
+} */
+.fullgroomtable {
+  border-collapse: collapse;
+  /* width+bothmargin = 88+6+6 = 100% */
+  width: 88%;
+  /* can't add margin to the bottom */
+  margin: 0% 6%;
+  /* background-color: yellow; */
+}
+.fullgroomtable th, td {
+  text-align: left;
+  padding: calc(var(--font_n)/2);
+}
+.fullgroomtable tr:nth-child(even) {
+  background-color: rgba(255,255,255,0.4);
+}
+
+
+/* MOBILE SECTION: BASIC GROOMING */
+.basicgroom_image_on_mobile {
+  background-color: var(--clr_primary);
+  /* height: 330px; */
+  background-image: url("IMG/");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  transform: rotate(0deg);
+  /* Adjust image left/right */
+  background-position-x: center;
+  /* Adjust image left/right/top/bottom */
+  background-position-y: center;
+}
+.basicgroom {
   width: 100%;
   height: auto;
 
@@ -279,30 +352,42 @@ nav ul li:last-child {
     /* background-position: 400px 100px; */ 
     /* background-size: cover; */
 }
-.intro .intro_text {
+.basicgroom .fullgroom_text {
   width: 100%;
 }
-.intro .expert {
+.basicgroom .expert {
   padding: 10% 6% 0 6%;
 }
-.intro h1 {
-  /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
-  color: var(--clr_accent);
-
+.basicgroom h1 {
   /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
-  padding: 1% 6% 3% 6%;
+  padding: 10% 6% 3% 6%;
 }
-.intro p {
+.basicgroom p {
   /* Adjust only top and bottom. Left and right control in .recognition div */
   padding: 3% 6% 0% 6%;
-
-  /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
-  color: var(--clr_accent);
 }
-
-
-
-
+/* .fullgroom span { */
+  /* font-style: italic; */
+/* } */
+/* .fullgroom h2 {
+  padding: 0.5% 6% 0% 6%;
+} */
+.basicgroomtable {
+  border-collapse: collapse;
+  /* width+bothmargin = 88+6+6 = 100% */
+  width: 88%;
+  /* can't add margin to the bottom */
+  margin: 0% 6%;
+  /* background-color: yellow; */
+}
+.basicgroomtable th, td {
+  text-align: left;
+  padding: calc(var(--font_n)/2);
+}
+.basicgroomtable tr:nth-child(even) {
+  /* background-color: rgba(255,255,255,0.4); */
+  background-color: var(--clr_shade);
+}
 
 
 
