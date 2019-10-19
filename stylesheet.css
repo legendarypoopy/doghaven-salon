@@ -135,11 +135,12 @@ nav ul li:last-child {
 /* MOBILE SECTION: OUR SALON */
 .divider1_image_on_mobile {
   background-color: var(--clr_primary);
-  height: 330px;
+  /* height: 330px; */
+  height: 40vh;
   background-image: url("IMG/salon1.JPG");
   background-repeat: no-repeat;
   background-size: 120%;
-  transform: rotate(0deg);
+  transform: rotate(-0.32deg);
   /* Adjust image left/right */
   background-position-x: center;
   /* Adjust image left/right/top/bottom */
@@ -293,23 +294,15 @@ Unable to add extra space after table so have to use a div for this */
 .fullgroom .fullgroom_text {
   width: 100%;
 }
-.fullgroom .expert {
-  padding: 10% 6% 0 6%;
-}
-.fullgroom h1 {
-  /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
+.fullgroom .fullgroom_header {
   padding: 10% 6% 3% 6%;
 }
-.fullgroom p {
-  /* Adjust only top and bottom. Left and right control in .recognition div */
+.fullgroom .fullgroom_body {
   padding: 3% 6% 0% 6%;
 }
-/* .fullgroom span { */
-  /* font-style: italic; */
-/* } */
-/* .fullgroom h2 {
-  padding: 0.5% 6% 0% 6%;
-} */
+.fullgroom .fullgroom_price {
+  padding: 10% 6% 3% 6%;
+}
 .fullgroomtable {
   border-collapse: collapse;
   /* width+bothmargin = 88+6+6 = 100% */
@@ -326,7 +319,31 @@ Unable to add extra space after table so have to use a div for this */
 .fullgroomtable tr:nth-child(even) {
   background-color: rgba(255,255,255,0.5);
 }
-
+.fullgroom .price_terms {
+  padding: 10% 6% 0% 6%;
+}
+.fullgroom .quote {
+  padding: 6% 6% 20% 6%;
+}
+.fullgroom .contact_us {
+  color: var(--clr_primary);
+}
+.fullgroom .contact_us:link {
+  color: var(--clr_primary);
+  text-decoration: none;
+}
+.fullgroom .contact_us:visited {
+  color: var(--clr_primary);
+  text-decoration: none;
+}
+.fullgroom .contact_us:hover {
+  color: var(--clr_dark);
+  text-decoration: underline;
+}
+.fullgroom .contact_us:active {
+  color: var(--clr_accent);
+  text-decoration: none;
+}
 
 
 /* MOBILE SECTION: BASIC GROOMING */
@@ -368,23 +385,15 @@ Unable to add extra space after table so have to use a div for this */
 .basicgroom .fullgroom_text {
   width: 100%;
 }
-.basicgroom .expert {
-  padding: 10% 6% 0 6%;
-}
-.basicgroom h1 {
-  /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
+.basicgroom .basicgroom_header {
   padding: 10% 6% 3% 6%;
 }
-.basicgroom p {
-  /* Adjust only top and bottom. Left and right control in .recognition div */
+.basicgroom .basicgroom_body {
   padding: 3% 6% 0% 6%;
 }
-/* .fullgroom span { */
-  /* font-style: italic; */
-/* } */
-/* .fullgroom h2 {
-  padding: 0.5% 6% 0% 6%;
-} */
+.basicgroom .basicgroom_price {
+  padding: 10% 6% 3% 6%;  
+}
 .basicgroomtable {
   border-collapse: collapse;
   /* width+bothmargin = 88+6+6 = 100% */
@@ -401,6 +410,31 @@ Unable to add extra space after table so have to use a div for this */
 .basicgroomtable tr:nth-child(even) {
   /* background-color: rgba(255,255,255,0.4); */
   background-color: var(--clr_shade);
+}
+.basicgroom .price_terms {
+  padding: 10% 6% 0% 6%;
+}
+.basicgroom .quote {
+  padding: 6% 6% 20% 6%;
+}
+.basicgroom .contact_us {
+  color: var(--clr_primary);
+}
+.basicgroom .contact_us:link {
+  color: var(--clr_primary);
+  text-decoration: none;
+}
+.basicgroom .contact_us:visited {
+  color: var(--clr_primary);
+  text-decoration: none;
+}
+.basicgroom .contact_us:hover {
+  color: var(--clr_dark);
+  text-decoration: underline;
+}
+.basicgroom .contact_us:active {
+  color: var(--clr_accent);
+  text-decoration: none;
 }
 
 
