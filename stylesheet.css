@@ -1,4 +1,4 @@
-* {
+﻿* {
   margin: 0;
   padding: 0;
 }
@@ -327,6 +327,7 @@ Unable to add extra space after table so have to use a div for this */
 }
 .fullgroom .contact_us {
   color: var(--clr_primary);
+  font-weight: bold;
 }
 .fullgroom .contact_us:link {
   color: var(--clr_primary);
@@ -338,10 +339,11 @@ Unable to add extra space after table so have to use a div for this */
 }
 .fullgroom .contact_us:hover {
   color: var(--clr_dark);
-  text-decoration: underline;
+  text-decoration: none;
 }
 .fullgroom .contact_us:active {
-  color: var(--clr_accent);
+  /* color: var(--clr_dark); */
+  font-weight: normal;
   text-decoration: none;
 }
 
@@ -419,6 +421,7 @@ Unable to add extra space after table so have to use a div for this */
 }
 .basicgroom .contact_us {
   color: var(--clr_primary);
+  font-weight: bold;
 }
 .basicgroom .contact_us:link {
   color: var(--clr_primary);
@@ -430,10 +433,11 @@ Unable to add extra space after table so have to use a div for this */
 }
 .basicgroom .contact_us:hover {
   color: var(--clr_dark);
-  text-decoration: underline;
+  text-decoration: none;
 }
 .basicgroom .contact_us:active {
-  color: var(--clr_accent);
+  /* color: var(--clr_dark); */
+  font-weight: normal;
   text-decoration: none;
 }
 
