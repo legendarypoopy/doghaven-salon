@@ -256,8 +256,8 @@ nav ul li:last-child {
 .fullgroom .fullgroom_body {
   padding: 3% 6% 0% 6%;
 }
-.left_fullgroom li {
-  /* list-style: disc; */
+.fullgroom_list {
+  padding: 3% 6% 0% 6%;
   list-style-position: inside;
 }
 .fullgroom .fullgroom_price {
@@ -731,6 +731,10 @@ footer .copyright p {
   .fullgroom .fullgroom_body {
     /* padding: 3% 6% 0% 6%; */
   }
+  .fullgroom_list {
+    /* padding: 3% 6% 0% 6%; */
+    /* list-style-position: inside; */
+  }
   .fullgroom .fullgroom_price {
     padding: 6% 6% 1% 6%;
   }
@@ -845,6 +849,9 @@ footer .copyright p {
   }
   .fullgroom .fullgroom_body {
     padding: 2% 13% 0% 0%;
+  }
+  .fullgroom_list {
+    padding: 0;
   }
   
   /* DESKTOP SECTION: FULL GROOMING-MIDDLE */
