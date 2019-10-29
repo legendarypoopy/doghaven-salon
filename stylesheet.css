@@ -91,7 +91,7 @@ nav ul {
 }
 nav ul li {
   background: var(--clr_shade);
-  list-style: none;
+  /* list-style: none; */
   }
 nav ul li a {
   color: var(--clr_accent);
@@ -255,6 +255,10 @@ nav ul li:last-child {
 }
 .fullgroom .fullgroom_body {
   padding: 3% 6% 0% 6%;
+}
+.left_fullgroom li {
+  /* list-style: disc; */
+  list-style-position: inside;
 }
 .fullgroom .fullgroom_price {
   padding: 10% 6% 3% 6%;
@@ -725,11 +729,14 @@ footer .copyright p {
     padding: 6% 6% 0% 6%;
   }
   .fullgroom .fullgroom_body {
-    padding: 3% 6% 0% 6%;
+    /* padding: 3% 6% 0% 6%; */
   }
   .fullgroom .fullgroom_price {
     padding: 6% 6% 1% 6%;
   }
+  /* .fullgroom br {
+    display: none;
+  } */
   .fullgroom .price_terms {
     padding: 6% 6% 0% 6%;
   }
@@ -754,6 +761,9 @@ footer .copyright p {
   .basicgroom .basicgroom_price {
     padding: 6% 6% 1% 6%;  
   }
+  .basicgroom br {
+    display: none;
+  }
   .basicgroom .price_terms {
     padding: 6% 6% 0% 6%;
   }
@@ -766,7 +776,9 @@ footer .copyright p {
   .alacarte h1 {
     padding: 6% 6% 0% 6%;
   }
-
+  .alacarte br {
+    display: none;
+  }
 
 
   /* TABLET SECTION: WHAT'S OUR SECERT? */
