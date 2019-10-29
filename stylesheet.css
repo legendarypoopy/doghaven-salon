@@ -91,7 +91,7 @@ nav ul {
 }
 nav ul li {
   background: var(--clr_shade);
-  /* list-style: none; */
+  list-style: none;
   }
 nav ul li a {
   color: var(--clr_accent);
@@ -206,7 +206,7 @@ nav ul li:last-child {
   transition: .3s;
 
   /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
-  margin: 4% 5% 15% 6%;
+  margin: 4% 5% 11% 6%;
 }
 .btn1:before {
   content: '';
@@ -319,6 +319,7 @@ margin: 0 0 0 10%;
   height: 130px;
   background-color: #E0DFE5;
   padding: 0% 0 5% 0;
+  background-position-x: center;
 }
 
 
