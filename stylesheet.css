@@ -254,7 +254,8 @@ margin: 0 0 0 10%;
 /* MOBILE SECTION: FULL GROOMING */
 .fullgroom {
   /* width: 100%; */
-  background: #E0DFE5;
+  background: var(--clr_shade);
+  /* background: #E0DFE5; */
 }
 .fullgroom .fullgroom_text {
   /* width: 100%; */
@@ -264,6 +265,10 @@ margin: 0 0 0 10%;
 }
 .fullgroom .fullgroom_body {
   padding: 6%;
+}
+.fullgroom_body2 {
+  padding: 6% 6% 6% 10%;
+  text-indent:-1.2rem;
 }
 .fullgroom .fullgroom_price {
   padding: 4% 6% 3% 6%;
@@ -282,13 +287,13 @@ margin: 0 0 0 10%;
   width: 60%;
 }
 .fullgroomtable tr:nth-child(even) {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.7);
 }
 .fullgroom .price_terms {
   padding: 10% 6% 0% 6%;
 }
 .fullgroom .quote {
-  padding: 6% 6% 3% 6%;
+  padding: 6%;
 }
 .fullgroom .contact_us {
   color: var(--clr_primary);
@@ -313,12 +318,12 @@ margin: 0 0 0 10%;
 }
 
 .fullgroom_image_on_mobile {
-  background-image: url("IMG/scissors-mobile.jpg");
+  background-image: url("IMG/scissors-mobile.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 85%;
   height: 130px;
-  background-color: #E0DFE5;
-  padding: 0% 0 5% 0;
+  background-color: var(--clr_shade);
+  padding: 0% 0 2% 0;
   background-position-x: center;
 }
 
@@ -838,7 +843,7 @@ footer .copyright p {
   
   /* DESKTOP SECTION: FULL GROOMING-MIDDLE */
   .fullgroom .middle_fullgroom {
-    background-image: url("IMG/scissors.jpg");
+    background-image: url("IMG/scissors.png");
     background-repeat: no-repeat;
     background-size: contain;
   }
