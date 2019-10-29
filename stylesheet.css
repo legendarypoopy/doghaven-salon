@@ -241,27 +241,32 @@ nav ul li:last-child {
 
 
 
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   CSS For both full grooming and basic grooming list 
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.groom_list {
+margin: 0 0 0 10%;
+}
+
 /* MOBILE SECTION: FULL GROOMING */
 .fullgroom {
-  width: 100%;
+  /* width: 100%; */
   background: #E0DFE5;
-
 }
 .fullgroom .fullgroom_text {
   /* width: 100%; */
 }
 .fullgroom .fullgroom_header {
-  padding: 10% 6% 3% 6%;
+  padding: 10% 6% 0% 6%;
 }
 .fullgroom .fullgroom_body {
-  padding: 3% 6% 0% 6%;
-}
-.fullgroom_list {
-  padding: 3% 6% 0% 6%;
-  list-style-position: inside;
+  padding: 6%;
 }
 .fullgroom .fullgroom_price {
-  padding: 10% 6% 3% 6%;
+  padding: 4% 6% 3% 6%;
 }
 .fullgroomtable {
   border-collapse: collapse;
@@ -319,49 +324,18 @@ nav ul li:last-child {
 
 
 /* MOBILE SECTION: BASIC GROOMING */
-.basicgroom_image_on_mobile {
-  background-color: var(--clr_primary);
-  /* height: 330px; */
-  background-image: url("IMG/");
-  background-repeat: no-repeat;
-  background-size: 120%;
-  /* transform: rotate(0deg); */
-  /* Adjust image left/right */
-  background-position: center;
-  /* Adjust image left/right/top/bottom */
-  background-position-y: center;
-}
 .basicgroom {
-  width: 100%;
-  height: auto;
-
-  /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
-  Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
-  All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
-  
+  /* width: 100%; */
   background: var(--clr_light);
-
-    /* Image position and size adjustment */
-    /* background-image: url("GR1.jpg"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: 32%; */
-    /* Adjust image left/right */
-    /* background-position-x: 85%; */
-    /* Adjust image left/right/top/bottom */
-    /* background-position-y: bottom; */
-    /* background-position-y: right; */
-
-    /* background-position: 400px 100px; */ 
-    /* background-size: cover; */
 }
 .basicgroom .fullgroom_text {
-  width: 100%;
+  /* width: 100%; */
 }
 .basicgroom .basicgroom_header {
-  padding: 10% 6% 3% 6%;
+  padding: 10% 6% 0% 6%;
 }
 .basicgroom .basicgroom_body {
-  padding: 3% 6% 0% 6%;
+  padding: 6%;
 }
 .basicgroom .basicgroom_price {
   padding: 10% 6% 3% 6%;  
@@ -724,23 +698,27 @@ footer .copyright p {
   }
 
 
+
+
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   CSS For both full grooming and basic grooming list 
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+  .groom_list {
+    margin: 0 0 0 8%;
+  }
+
   /* TABLET SECTION: FULL GROOMING */
   .fullgroom .fullgroom_header {
     padding: 6% 6% 0% 6%;
   }
   .fullgroom .fullgroom_body {
-    /* padding: 3% 6% 0% 6%; */
-  }
-  .fullgroom_list {
-    /* padding: 3% 6% 0% 6%; */
-    /* list-style-position: inside; */
+    padding: 3% 6% 3% 6%;
   }
   .fullgroom .fullgroom_price {
-    padding: 6% 6% 1% 6%;
+    padding: 3% 6% 1% 6%;
   }
-  /* .fullgroom br {
-    display: none;
-  } */
   .fullgroom .price_terms {
     padding: 6% 6% 0% 6%;
   }
@@ -760,13 +738,10 @@ footer .copyright p {
     padding: 6% 6% 0% 6%;
   }
   .basicgroom .basicgroom_body {
-    padding: 3% 6% 0% 6%;
+    padding: 3% 6% 3% 6%;
   }
   .basicgroom .basicgroom_price {
     padding: 6% 6% 1% 6%;  
-  }
-  .basicgroom br {
-    display: none;
   }
   .basicgroom .price_terms {
     padding: 6% 6% 0% 6%;
@@ -843,15 +818,21 @@ footer .copyright p {
     padding: 5% 6% 5% 6%;
   }
 
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   CSS For both full grooming and basic grooming list 
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  .groom_list {
+    margin: 0 0 0 4%;
+    padding: 0 10% 0 0;
+  }
+
   /* DESKTOP SECTION: FULL GROOMING-LEFT */
   .fullgroom .fullgroom_header {
     padding: 0% 0% 0% 0%;
   }
   .fullgroom .fullgroom_body {
-    padding: 2% 13% 0% 0%;
-  }
-  .fullgroom_list {
-    padding: 0;
+    padding: 4% 10% 4% 0%;
   }
   
   /* DESKTOP SECTION: FULL GROOMING-MIDDLE */
