@@ -247,33 +247,32 @@ nav ul li:last-child {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    CSS For both full grooming and basic grooming list 
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.groom_list {
-margin: 0 0 0 10%;
-}
+
 
 /* MOBILE SECTION: FULL GROOMING */
-.fullgroom {
-  /* width: 100%; */
+.groom {
   background: var(--clr_shade);
-  /* background: #E0DFE5; */
 }
-.fullgroom .fullgroom_text {
+.groom_text {
   /* width: 100%; */
 }
-.fullgroom .fullgroom_header {
+.groom_header {
   padding: 10% 6% 0% 6%;
 }
-.fullgroom .fullgroom_body {
+.groom_body {
   padding: 6%;
 }
-.fullgroom_body2 {
-  padding: 6% 6% 6% 10%;
+.groom_list {
+  margin: 0 6% 0.7% 10%;
+  }
+.groom_body2 {
+  padding: 4% 6% 6% 10%;
   text-indent:-1.2rem;
 }
-.fullgroom .fullgroom_price {
+.groom_price {
   padding: 4% 6% 3% 6%;
 }
-.fullgroomtable {
+.groomtable {
   border-collapse: collapse;
   /* width+bothmargin = 88+6+6 = 100% */
   width: 88%;
@@ -281,114 +280,67 @@ margin: 0 0 0 10%;
   margin: 0% 6%;
   /* background-color: pink; */
 }
-.fullgroomtable th, td {
+.groomtable th, td {
   text-align: left;
   padding: calc(var(--font_n)/2);
   width: 60%;
 }
-.fullgroomtable tr:nth-child(even) {
+.groomtable tr:nth-child(even) {
   background-color: rgba(255,255,255,0.7);
 }
-.fullgroom .price_terms {
+.groom .price_terms {
   padding: 10% 6% 0% 6%;
 }
-.fullgroom .quote {
+.groom .quote {
   padding: 6%;
 }
-.fullgroom .contact_us {
+.groom .contact_us {
   color: var(--clr_primary);
   font-weight: bold;
 }
-.fullgroom .contact_us:link {
+.groom .contact_us:link {
   color: var(--clr_primary);
   text-decoration: none;
 }
-.fullgroom .contact_us:visited {
+.groom .contact_us:visited {
   color: var(--clr_primary);
   text-decoration: none;
 }
-.fullgroom .contact_us:hover {
+.groom .contact_us:hover {
   color: var(--clr_dark);
   text-decoration: none;
 }
-.fullgroom .contact_us:active {
+.groom .contact_us:active {
   /* color: var(--clr_dark); */
   font-weight: normal;
   text-decoration: none;
 }
 
-.fullgroom_image_on_mobile {
+.groom_image_on_mobile {
   background-image: url("IMG/scissors-mobile.png");
   background-repeat: no-repeat;
   background-size: 85%;
   height: 130px;
   background-color: var(--clr_shade);
-  padding: 0% 0 2% 0;
+  padding: 0% 0 3% 0;
   background-position-x: center;
 }
 
 
 
 /* MOBILE SECTION: BASIC GROOMING */
-.basicgroom {
-  /* width: 100%; */
+.basic_groom {
   background: var(--clr_light);
 }
-.basicgroom .fullgroom_text {
-  /* width: 100%; */
+.basic_groom_price {
+  padding: 8% 6% 3% 6%;
 }
-.basicgroom .basicgroom_header {
-  padding: 10% 6% 0% 6%;
-}
-.basicgroom .basicgroom_body {
-  padding: 6%;
-}
-.basicgroom .basicgroom_price {
-  padding: 10% 6% 3% 6%;  
-}
-.basicgroomtable {
-  border-collapse: collapse;
-  /* width+bothmargin = 88+6+6 = 100% */
-  width: 88%;
-  /* can't add margin to the bottom */
-  margin: 0% 6%;
-  /* background-color: yellow; */
-}
-.basicgroomtable th, td {
-  text-align: left;
-  padding: calc(var(--font_n)/2);
-  width: 60%;
-}
-.basicgroomtable tr:nth-child(even) {
-  /* background-color: rgba(255,255,255,0.4); */
+.basic_groomtable tr:nth-child(even) {
   background-color: var(--clr_shade);
 }
-.basicgroom .price_terms {
-  padding: 10% 6% 0% 6%;
-}
-.basicgroom .quote {
-  padding: 6% 6% 20% 6%;
-}
-.basicgroom .contact_us {
-  color: var(--clr_primary);
-  font-weight: bold;
-}
-.basicgroom .contact_us:link {
-  color: var(--clr_primary);
-  text-decoration: none;
-}
-.basicgroom .contact_us:visited {
-  color: var(--clr_primary);
-  text-decoration: none;
-}
-.basicgroom .contact_us:hover {
-  color: var(--clr_dark);
-  text-decoration: none;
-}
-.basicgroom .contact_us:active {
-  /* color: var(--clr_dark); */
-  font-weight: normal;
-  text-decoration: none;
+.basic_groom_image_on_mobile {
+  background-image: url("IMG/clipper-mobile.png");
+  background-color: var(--clr_light);
 }
 
 
@@ -444,10 +396,10 @@ margin: 0 0 0 10%;
   padding: 3% 6% 0% 6%;
   color: var(--clr_light);
 }
-/* .fullgroom span { */
+/* .groom span { */
   /* font-style: italic; */
 /* } */
-/* .fullgroom h2 {
+/* .groom h2 {
   padding: 0.5% 6% 0% 6%;
 } */
 .alacartetable {
@@ -716,22 +668,22 @@ footer .copyright p {
   }
 
   /* TABLET SECTION: FULL GROOMING */
-  .fullgroom .fullgroom_header {
+  .groom .groom_header {
     padding: 6% 6% 0% 6%;
   }
-  .fullgroom .fullgroom_body {
+  .groom .groom_body {
     padding: 3% 6% 3% 6%;
   }
-  .fullgroom .fullgroom_price {
+  .groom .groom_price {
     padding: 3% 6% 1% 6%;
   }
-  .fullgroom .price_terms {
+  .groom .price_terms {
     padding: 6% 6% 0% 6%;
   }
-  .fullgroom .quote {
+  .groom .quote {
     padding: 2% 6% 0% 6%;
   }
-  .fullgroom_image_on_mobile {
+  .groom_image_on_mobile {
     background-size: 70%;
     background-color: #E0DFE5;
     padding: 0% 0 10% 0;
@@ -814,7 +766,7 @@ footer .copyright p {
 
 
   /* DESKTOP SECTION: GRID FOR FULL GROOM TEXT */
-  .fullgroom_text {
+  .groom_text {
     display: grid;
     /* Can change 1 to auto-fit and it will be responsive
     18rem is the biggest it can go before the screen can't fit for small mobile devices */
@@ -834,15 +786,15 @@ footer .copyright p {
   }
 
   /* DESKTOP SECTION: FULL GROOMING-LEFT */
-  .fullgroom .fullgroom_header {
+  .groom .groom_header {
     padding: 0% 0% 0% 0%;
   }
-  .fullgroom .fullgroom_body {
+  .groom .groom_body {
     padding: 4% 10% 4% 0%;
   }
   
   /* DESKTOP SECTION: FULL GROOMING-MIDDLE */
-  .fullgroom .middle_fullgroom {
+  .groom .middle_groom {
     background-image: url("IMG/scissors.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -850,20 +802,20 @@ footer .copyright p {
   
   
   /* DESKTOP SECTION: FULL GROOMING-RIGHT */
-  .fullgroom .fullgroom_price {
+  .groom .groom_price {
     padding: 0% 0% 1% 0%;
   }
-  .fullgroomtable {
+  .groomtable {
     width: 100%;
     margin: 0% 0%;
   }
-  .fullgroom .price_terms {
+  .groom .price_terms {
     padding: 6% 0% 0% 0%;
   }
-  .fullgroom .quote {
+  .groom .quote {
     padding: 2% 0% 0% 0%;
   }
-  .fullgroom_image_on_mobile {
+  .groom_image_on_mobile {
     background-image: none;
     height: 0;
     padding: 0;
