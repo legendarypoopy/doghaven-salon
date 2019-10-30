@@ -247,9 +247,7 @@ nav ul li:last-child {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    CSS For both full grooming and basic grooming list 
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-
-/* MOBILE SECTION: FULL GROOMING */
+/* MOBILE SECTION: FULL GROOMING & BASIC GROOMING */
 .groom {
   background: var(--clr_shade);
 }
@@ -288,29 +286,29 @@ nav ul li:last-child {
 .groomtable tr:nth-child(even) {
   background-color: rgba(255,255,255,0.7);
 }
-.groom .price_terms {
+.price_terms {
   padding: 10% 6% 0% 6%;
 }
-.groom .quote {
+.quote {
   padding: 6%;
 }
-.groom .contact_us {
+.contact_us {
   color: var(--clr_primary);
   font-weight: bold;
 }
-.groom .contact_us:link {
+.contact_us:link {
   color: var(--clr_primary);
   text-decoration: none;
 }
-.groom .contact_us:visited {
+.contact_us:visited {
   color: var(--clr_primary);
   text-decoration: none;
 }
-.groom .contact_us:hover {
+.contact_us:hover {
   color: var(--clr_dark);
   text-decoration: none;
 }
-.groom .contact_us:active {
+.contact_us:active {
   /* color: var(--clr_dark); */
   font-weight: normal;
   text-decoration: none;
@@ -328,6 +326,9 @@ nav ul li:last-child {
 
 
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ADDITIONAL ADD-ONS FOR BASIC GROOMING ONLY
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* MOBILE SECTION: BASIC GROOMING */
 .basic_groom {
   background: var(--clr_light);
@@ -344,47 +345,10 @@ nav ul li:last-child {
 }
 
 
+
 /* MOBILE SECTION: À la carte services */
-.alacarte_image_on_mobile {
-  background-color: var(--clr_primary);
-  /* height: 330px; */
-  background-image: url("IMG/");
-  background-repeat: no-repeat;
-  background-size: 120%;
-  transform: rotate(0deg);
-  /* Adjust image left/right */
-  background-position-x: center;
-  /* Adjust image left/right/top/bottom */
-  background-position-y: center;
-}
 .alacarte {
-  width: 100%;
-  height: auto;
-
-  /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
-  Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
-  All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
-  
   background: var(--clr_dark);
-
-    /* Image position and size adjustment */
-    /* background-image: url("GR1.jpg"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: 32%; */
-    /* Adjust image left/right */
-    /* background-position-x: 85%; */
-    /* Adjust image left/right/top/bottom */
-    /* background-position-y: bottom; */
-    /* background-position-y: right; */
-
-    /* background-position: 400px 100px; */ 
-    /* background-size: cover; */
-}
-.alacarte .alacarte_text {
-  width: 100%;
-}
-.alacarte .expert {
-  padding: 10% 6% 0 6%;
 }
 .alacarte h1 {
   /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
@@ -394,14 +358,7 @@ nav ul li:last-child {
 .alacarte p {
   /* Adjust only top and bottom. Left and right control in .recognition div */
   padding: 3% 6% 0% 6%;
-  color: var(--clr_light);
 }
-/* .groom span { */
-  /* font-style: italic; */
-/* } */
-/* .groom h2 {
-  padding: 0.5% 6% 0% 6%;
-} */
 .alacartetable {
   border-collapse: collapse;
   /* width+bothmargin = 88+6+6 = 100% */
@@ -663,49 +620,51 @@ footer .copyright p {
    CSS For both full grooming and basic grooming list 
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-  .groom_list {
-    margin: 0 0 0 8%;
-  }
+  
 
   /* TABLET SECTION: FULL GROOMING */
-  .groom .groom_header {
+  .groom_header {
     padding: 6% 6% 0% 6%;
   }
-  .groom .groom_body {
+  .groom_body {
     padding: 3% 6% 3% 6%;
   }
-  .groom .groom_price {
+  .groom_list {
+    margin: 0 0 0.7% 8%;
+  }
+  .groom_body2 {
+    padding: 3% 6% 3% 8.3%;
+    text-indent:-1.2rem;
+  }
+  .groom_price {
     padding: 3% 6% 1% 6%;
   }
-  .groom .price_terms {
+  .price_terms {
     padding: 6% 6% 0% 6%;
   }
-  .groom .quote {
-    padding: 2% 6% 0% 6%;
+  .quote {
+    padding: 2% 6% 3% 6%;
   }
   .groom_image_on_mobile {
-    background-size: 70%;
-    background-color: #E0DFE5;
-    padding: 0% 0 10% 0;
-    background-position: center;
+    padding: 0% 0 17% 0;
   }
 
 
   /* TABLET SECTION: BASIC GROOMING */
-  .basicgroom .basicgroom_header {
-    padding: 6% 6% 0% 6%;
+  .basicgroom_header {
+    /* padding: 6% 6% 0% 6%; */
   }
-  .basicgroom .basicgroom_body {
-    padding: 3% 6% 3% 6%;
+  .basicgroom_body {
+    /* padding: 3% 6% 3% 6%; */
   }
-  .basicgroom .basicgroom_price {
+  .basic_groom_price {
     padding: 6% 6% 1% 6%;  
   }
-  .basicgroom .price_terms {
-    padding: 6% 6% 0% 6%;
+  .price_terms {
+    /* padding: 6% 6% 0% 6%; */
   }
-  .basicgroom .quote {
-    padding: 2% 6% 8% 6%;
+  .quote {
+    padding: 2% 6% 7% 6%;
   }
 
 
@@ -780,21 +739,24 @@ footer .copyright p {
   /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    CSS For both full grooming and basic grooming list 
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-  .groom_list {
-    margin: 0 0 0 4%;
-    padding: 0 10% 0 0;
-  }
-
-  /* DESKTOP SECTION: FULL GROOMING-LEFT */
+    /* DESKTOP SECTION: FULL GROOMING-LEFT */
   .groom .groom_header {
     padding: 0% 0% 0% 0%;
   }
   .groom .groom_body {
     padding: 4% 10% 4% 0%;
   }
+  .groom_list {
+    margin: 0 0 0.7% 4%;
+    padding: 0 10% 0 0;
+  }
+  .groom_body2 {
+    margin: 0 0 0 4%;
+    padding: 6% 10% 0 0;
+  }
   
   /* DESKTOP SECTION: FULL GROOMING-MIDDLE */
-  .groom .middle_groom {
+  .middle_full_groom {
     background-image: url("IMG/scissors.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -802,17 +764,17 @@ footer .copyright p {
   
   
   /* DESKTOP SECTION: FULL GROOMING-RIGHT */
-  .groom .groom_price {
+  .groom_price {
     padding: 0% 0% 1% 0%;
   }
   .groomtable {
     width: 100%;
     margin: 0% 0%;
   }
-  .groom .price_terms {
+  .price_terms {
     padding: 6% 0% 0% 0%;
   }
-  .groom .quote {
+  .quote {
     padding: 2% 0% 0% 0%;
   }
   .groom_image_on_mobile {
@@ -821,14 +783,27 @@ footer .copyright p {
     padding: 0;
   }
 
+  /* DESKTOP SECTION: BASIC GROOMING-MIDDLE */
+  .middle_basic_groom {
+    background-image: url("IMG/clipper.png");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+  }
 
 
-
-
-
-
-
-
+  /* DESKTOP SECTION: À la carte services */
+  .alacarte h1 {
+    padding: 5% 6% 0% 6%;
+  }
+  .alacarte p {
+    /* Adjust only top and bottom. Left and right control in .recognition div */
+    padding: 2% 6% 0% 6%;
+  }
+  .addspace {
+    height: 60px;
+  }
+  
 
   /* DESKTOP SECTION: FOOTER */  
   footer .info h1  {
@@ -840,7 +815,6 @@ footer .copyright p {
   .btn5 {
   /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
     margin: 1% 5% 5% 6%;
-
   }
 
 }
