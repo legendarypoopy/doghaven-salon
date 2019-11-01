@@ -251,14 +251,11 @@ nav ul li:last-child {
 .groom {
   background: var(--clr_shade);
 }
-.groom_text {
-  /* width: 100%; */
-}
 .groom_header {
   padding: 10% 6% 0% 6%;
 }
 .groom_body {
-  padding: 6%;
+  padding: 5% 6% 6% 6%;
 }
 .groom_list {
   margin: 0 6% 0.7% 10%;
@@ -651,17 +648,8 @@ footer .copyright p {
 
 
   /* TABLET SECTION: BASIC GROOMING */
-  .basicgroom_header {
-    /* padding: 6% 6% 0% 6%; */
-  }
-  .basicgroom_body {
-    /* padding: 3% 6% 3% 6%; */
-  }
   .basic_groom_price {
     padding: 6% 6% 1% 6%;  
-  }
-  .price_terms {
-    /* padding: 6% 6% 0% 6%; */
   }
   .quote {
     padding: 2% 6% 7% 6%;
